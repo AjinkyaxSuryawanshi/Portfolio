@@ -152,9 +152,9 @@ export default function About() {
               {/* Email */}
               <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group">
                 <Mail className="w-5 h-5 text-purple-400" />
-                <span className="flex-1 text-sm text-white/80">your.email@example.com</span>
+                <span className="flex-1 text-sm text-white/80">ajinkya.suryawanshi0104@gmail.com</span>
                 <button
-                  onClick={() => copyToClipboard('your.email@example.com', 'email')}
+                  onClick={() => copyToClipboard('ajinkya.suryawanshi0104@gmail.com', 'email')}
                   className="p-2 rounded-lg hover:bg-white/10 transition-colors"
                 >
                   {copiedEmail ? (
@@ -168,9 +168,9 @@ export default function About() {
               {/* Phone */}
               <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors group">
                 <Phone className="w-5 h-5 text-purple-400" />
-                <span className="flex-1 text-sm text-white/80">+91 XXXXX XXXXX</span>
+                <span className="flex-1 text-sm text-white/80">+91 9673444228</span>
                 <button
-                  onClick={() => copyToClipboard('+91 XXXXX XXXXX', 'phone')}
+                  onClick={() => copyToClipboard('+91 9673444228', 'phone')}
                   className="p-2 rounded-lg hover:bg-white/10 transition-colors"
                 >
                   {copiedPhone ? (
@@ -214,10 +214,10 @@ export default function About() {
               </h4>
               <div className="absolute inset-0 pt-16">
                 <Canvas camera={{ position: [0, 0, 7], fov: 50 }} dpr={[1, 2]}>
-                  <color attach="background" args={['transparent']} />
-                  <InteractiveGlobe />
+                 <InteractiveGlobe />
                   <ambientLight intensity={0.4} />
-                </Canvas>
+                  </Canvas>
+
               </div>
             </div>
 

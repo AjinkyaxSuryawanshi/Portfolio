@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: 1,
-    title: 'Hotel Tonight - Perfect Stay',
+    title: 'Jal - Marg : Optimal Ship Routing system',
     description: 'Find your perfect stay — fast, easy, and beautifully designed.',
     image: '/images/project-hotel.jpg',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],

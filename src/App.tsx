@@ -11,6 +11,9 @@ import TechStack from '@/sections/TechStack';
 import Projects from '@/sections/Projects';
 import Experience from '@/sections/Experience';
 import Contact from '@/sections/Contact';
+import Galaxy from '@/components/Backgrounds/Galaxy';
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,11 +52,33 @@ function App() {
 
       {/* Custom Cursor */}
       <RocketCursor />
+    
+    {/* Galaxy Background */}
+<div
+  className="fixed inset-0 z-0 pointer-events-none"
+  style={{ width: '100vw', height: '100vh' }}
+>
+  <Galaxy
+    mouseInteraction
+    mouseRepulsion
+    density={1}
+    glowIntensity={0.2}
+    saturation={0}
+    hueShift={210}
+    twinkleIntensity={0.6}
+    rotationSpeed={0.35}
+    repulsionStrength={2}
+    autoCenterRepulsion={0}
+    starSpeed={0.8}
+    speed={0.7}
+  />
+</div>
+
 
       {/* Main Content */}
       <div
         ref={mainRef}
-        className="relative"
+        className="relative z-10"
         style={{ opacity: isLoading ? 0 : 1 }}
       >
         <Navigation />
